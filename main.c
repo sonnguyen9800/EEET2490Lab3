@@ -12,6 +12,9 @@ void main()
  char c = uart_getc();
  //send back twice
  uart_puts("You typed:");
+ if (c >= 97){
+	 c -= 32;
+ }
  uart_sendc(c);
  uart_puts("\n");
 
