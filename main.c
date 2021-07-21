@@ -11,7 +11,9 @@ void main()
  //read each char
  char c = uart_getc();
  //send back twice
+ uart_puts("You typed:");
  uart_sendc(c);
- uart_sendc(c);
+ uart_puts("\n");
+
  }
 }
